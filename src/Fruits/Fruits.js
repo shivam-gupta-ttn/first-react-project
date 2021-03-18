@@ -1,21 +1,16 @@
 import React from 'react';
+// import Fruit from '../Fruits/Fruit/Fruit';
 
-const fruits = (props) => {
+const fruit = (props) => {
     return (
-    <div>
-        <table>
-            {/* <tr>
-                <th>Fruit</th>
-                <th>Qty</th>
-                <th>Delete</th>
-            </tr> */}
+       
             <tr>
                 <td>{props.fname}</td>
                 <td>{props.qty}</td>
-                <td><button onClick={props.deleted}>Delete</button></td>
+                <td><button onClick={props.deleted}>X</button></td>
             </tr>
-        </table>
-    </div>
-    )};
+       
+    )
+};
 
-export default fruits;
+export default fruit;
